@@ -17,7 +17,6 @@ self.addEventListener("install", (event) => {
 });
 
 const cacheFirst = async (request) => {
-  console.log('cachefirst');
   /*
   my hack to not cache locally
   */
