@@ -1,5 +1,3 @@
-console.log('this is sw.js');
-
 const addResourcesToCache = async (resources) => {
 	console.log('adding stuff to cache');
   const cache = await caches.open("v3");
@@ -19,6 +17,11 @@ self.addEventListener("install", (event) => {
 });
 
 const cacheFirst = async (request) => {
+  console.log('cachefirst');
+  /*
+  my hack to not cache locally
+  */
+  if(self.location.host.indexOf('127') > -1) return fetch(request);
   const responseFromCache = await caches.match(request);
   if (responseFromCache) {
     return responseFromCache;
