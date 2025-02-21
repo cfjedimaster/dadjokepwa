@@ -1,0 +1,10 @@
+
+Don't stop Dad Joke API - fix fetch event in sw
+Center that div
+Detect online/offline for Jokes, and use backup
+
+
+Ray: https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers#recovering_failed_requests
+
+
+eric q: check caches api for adding a TTL

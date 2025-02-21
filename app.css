@@ -1,0 +1,26 @@
+body {
+	background-color: deeppink;
+	color: white;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	display: flex;
+	flex-direction: column;
+	min-height: 100svh;
+}
+
+#joke {
+	font-size: 3em;
+}
+
+#jokeBtnContainer {
+	text-align: center;
+	margin-top: auto;
+	margin-block-start: auto;
+	margin-bottom: 1rem;
+	margin-block-end: 1rem;
+}
+
+#jokeBtn {
+	height: 75px;
+	width: 225px;
+	font-size: 2em;
+}
